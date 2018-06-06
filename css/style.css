@@ -2,8 +2,86 @@
   font-family: "Raleway";
   src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
 }
-p {
+@font-face {
+  font-family: "Millunium";
+  src: url(./../assets/fonts/Millunium/Millunium-Bold.ttf) format("truetype");
+}
+body {
   font-family: "Raleway", sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Millunium";
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1.43px;
+  margin: 0 0 24px;
+}
+
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+nav .logo {
+  float: left;
+}
+nav #menu {
+  float: right;
+  padding: 0.7rem 0;
+}
+nav #menu li {
+  display: inline-block;
+}
+nav #menu li a {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+#hero {
+  background: url(./../assets/images/pp-main-background.jpg) no-repeat center;
+  color: #fff;
+  text-align: center;
+  padding: 14rem 0 7rem;
+}
+#hero p {
+  border-radius: 3px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#hero button {
+  margin: 54px 0;
+}
+#hero .circle-slide-down {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 36px;
+  height: 36px;
+}
+
+button.CTA {
+  background: #3ead48;
+  color: #fff;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.13px;
+  border: none;
+  border-radius: 3px;
+  width: 320px;
+  height: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
