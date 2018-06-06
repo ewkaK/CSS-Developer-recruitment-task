@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
+}
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+//typography - desktop
+
+$desFs: 15px;
+$desLh: 24px;
+
+@font-face {
+  font-family: "Raleway";
+  src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
+}
+
+
+
+p {
+  font-family: "Raleway", sans-serif
+}
