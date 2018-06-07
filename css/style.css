@@ -155,6 +155,12 @@ nav #menu li a {
   margin-bottom: 20px;
 }
 
+footer {
+  background: #1e3066;
+  color: #fff;
+  text-align: center;
+}
+
 /* other useful classes ******************************************************** */
 .overlap-boxes {
   position: relative;
