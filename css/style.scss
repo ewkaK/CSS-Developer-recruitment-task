@@ -6,6 +6,10 @@ $color-small-headers: #999;
 $color-primary: #3ead48;
 $color-secondary: #1e3066;
 
+.primary-color {
+  color: $color-primary;
+}
+
 //typography
 @font-face {
   font-family: "Raleway";
@@ -38,6 +42,7 @@ body{
   h2{
     font-size: 48px;
     line-height: 56px;
+    color: $color-small-headers
   }
 
   h3{
@@ -137,8 +142,10 @@ nav {
 .overlap-boxes {
 
   position: relative;
+  z-index: 1;
 
-  &>div{
+  & > div,
+  & > div img {
     border-radius: 3px;
   }
 
@@ -160,9 +167,9 @@ nav {
     background: #3ead48;
     padding: 45px;
     text-align: center;
-    position: relative;
+    position: absolute;
     left: 6rem;
-    top: -1rem;
+    top: 39rem;
     z-index: -1;
 
     h2, h4, h5 {
@@ -175,10 +182,35 @@ nav {
   box-shadow: 0 3px 6px rgba(0,0,0,0.18);
 }
 
+#reward{
+  background: #fff;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.icon-box {
+  max-width: 187px;
+
+  .icon {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto 10px;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  p{
+    font-weight: 700;
+  }
+}
+
 
 .img-responsive{
   width: 100%;
-  height:100%
+  height: auto;
 }
 
 button.CTA{
@@ -197,11 +229,17 @@ button.CTA{
 .container-limited-width{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10rem 0 7rem;
 }
 
 .flex-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.section-heading{
+  max-width: 600px;
+  margin: 0 auto 3rem;
 }
 

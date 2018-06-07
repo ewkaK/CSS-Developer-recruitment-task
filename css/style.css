@@ -1,3 +1,7 @@
+.primary-color {
+  color: #3ead48;
+}
+
 @font-face {
   font-family: "Raleway";
   src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
@@ -26,6 +30,7 @@ body h1 {
 body h2 {
   font-size: 48px;
   line-height: 56px;
+  color: #999;
 }
 body h3 {
   font-size: 32px;
@@ -107,8 +112,9 @@ nav #menu li a {
 
 .overlap-boxes {
   position: relative;
+  z-index: 1;
 }
-.overlap-boxes > div {
+.overlap-boxes > div, .overlap-boxes > div img {
   border-radius: 3px;
 }
 .overlap-boxes .first-box {
@@ -127,9 +133,9 @@ nav #menu li a {
   background: #3ead48;
   padding: 45px;
   text-align: center;
-  position: relative;
+  position: absolute;
   left: 6rem;
-  top: -1rem;
+  top: 39rem;
   z-index: -1;
 }
 .overlap-boxes .additional-info-box h2, .overlap-boxes .additional-info-box h4, .overlap-boxes .additional-info-box h5 {
@@ -141,9 +147,31 @@ nav #menu li a {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
 }
 
+#reward {
+  background: #fff;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.icon-box {
+  max-width: 187px;
+}
+.icon-box .icon {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
+.icon-box .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.icon-box p {
+  font-weight: 700;
+}
+
 .img-responsive {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 button.CTA {
@@ -162,12 +190,18 @@ button.CTA {
 .container-limited-width {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 10rem 0 7rem;
 }
 
 .flex-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.section-heading {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
