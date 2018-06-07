@@ -1,9 +1,9 @@
-.primary-color {
-  color: #3ead48;
-}
-
 @font-face {
-  font-family: "Raleway";
+  font-family: "Raleway-Regular";
+  src: url(./../assets/fonts/Raleway/Raleway-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Raleway-Medium";
   src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
 }
 @font-face {
@@ -11,14 +11,14 @@
   src: url(./../assets/fonts/Millunium/Millunium-Bold.ttf) format("truetype");
 }
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway-Regular", sans-serif;
   font-size: 15px;
   line-height: 24px;
   background: #f4f4f4;
   color: #3c3c3c;
 }
 body h1, body h2, body h3, body h5 {
-  font-family: "Millunium";
+  font-family: "Millunium", sans-serif;
   font-weight: 700;
   color: #333;
 }
@@ -50,11 +50,14 @@ body h5 {
   line-height: 18px;
 }
 
+/* unique styles from sections ************************************************ */
 nav {
   position: absolute;
   left: 0;
   right: 0;
   z-index: 10000;
+}
+nav.container-limited-width {
   padding: 2rem;
 }
 nav .logo {
@@ -91,6 +94,7 @@ nav #menu li a {
   margin: 0 0 24px;
 }
 #hero p {
+  font-family: Raleway-Medium, sans-serif;
   border-radius: 3px;
   max-width: 600px;
   margin: 0 auto;
@@ -98,18 +102,37 @@ nav #menu li a {
 #hero button.CTA {
   margin: 54px 0;
 }
-#hero .circle-down {
-  display: block;
-  background: none;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  width: 36px;
-  height: 36px;
+
+#reward {
+  background: #fff;
   text-align: center;
-  padding: 7px 0;
-  margin: 0 auto;
+  padding-top: 15rem;
 }
 
+#join .quote {
+  flex-wrap: nowrap;
+}
+#join .quote i {
+  font-size: 24px;
+  color: #a7cda5;
+  margin-right: 30px;
+}
+#join .quote .quote-author {
+  justify-content: normal;
+  align-items: center;
+}
+#join .quote .quote-author img {
+  background: #fff;
+  border-radius: 100px;
+  margin-right: 17px;
+  max-width: 64px;
+}
+#join .quote .quote-author h4 {
+  font-family: "Raleway-Regular", sans-serif;
+  margin: 0;
+}
+
+/* other useful classes ******************************************************** */
 .overlap-boxes {
   position: relative;
   z-index: 1;
@@ -121,6 +144,9 @@ nav #menu li a {
   max-width: 610px;
   padding: 50px 50px 45px;
 }
+.overlap-boxes .first-box p {
+  margin: 0 0 29px;
+}
 .overlap-boxes .under-box {
   max-width: 693px;
   position: absolute;
@@ -128,9 +154,16 @@ nav #menu li a {
   left: 54rem;
   z-index: -10;
 }
+.overlap-boxes .under-box.text-content {
+  font-family: Raleway-Medium, sans-serif;
+  padding: 40px;
+  padding-left: 90px;
+}
+.overlap-boxes .under-box.text-content p {
+  font-width: 500;
+}
 .overlap-boxes .additional-info-box {
   max-width: 510px;
-  background: #3ead48;
   padding: 45px;
   text-align: center;
   position: absolute;
@@ -138,19 +171,10 @@ nav #menu li a {
   top: 39rem;
   z-index: -1;
 }
-.overlap-boxes .additional-info-box h2, .overlap-boxes .additional-info-box h4, .overlap-boxes .additional-info-box h5 {
-  color: #fff;
-}
 
 .white-shadow-box {
   background: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
-}
-
-#reward {
-  background: #fff;
-  text-align: center;
-  padding-top: 15rem;
 }
 
 .icon-box {
@@ -159,7 +183,7 @@ nav #menu li a {
 .icon-box .icon {
   height: 100px;
   width: 100px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 .icon-box .icon img {
   max-width: 100%;
@@ -167,11 +191,6 @@ nav #menu li a {
 }
 .icon-box p {
   font-weight: 700;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
 }
 
 button.CTA {
@@ -187,10 +206,28 @@ button.CTA {
   height: 48px;
 }
 
+.circle-down {
+  display: block;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  padding: 7px 0;
+  margin: 0 auto;
+}
+
+/* more general classes ********************************************************* */
 .container-limited-width {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10rem 0 7rem;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 .flex-box {
@@ -201,7 +238,18 @@ button.CTA {
 
 .section-heading {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
+}
+
+.primary-color {
+  color: #3ead48;
+}
+
+.primary-color-background {
+  background: #3ead48;
+}
+.primary-color-background h2, .primary-color-background h4, .primary-color-background h5, .primary-color-background p, .primary-color-background i {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
