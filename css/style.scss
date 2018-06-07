@@ -1,3 +1,11 @@
+//colors
+$color-body: #f4f4f4;
+$color-default-text: #3c3c3c;
+$color-headers: #333;
+$color-small-headers: #999;
+$color-primary: #3ead48;
+$color-secondary: #1e3066;
+
 //typography
 @font-face {
   font-family: "Raleway";
@@ -11,20 +19,48 @@
 body{
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-}
-h1{
-  font-family: "Millunium";
-  font-size: 64px;
-  font-weight: 700;
-  letter-spacing: -1.43px;
-  margin: 0 0 24px;
+  line-height: 24px;
+  background: $color-body;
+  color: $color-default-text;
+
+  h1, h2, h3, h5{
+    font-family: "Millunium";
+    font-weight: 700;
+    color: $color-headers;
+  }
+
+  h1{
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -1.43px;
+  }
+
+  h2{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h3{
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 0;
+  }
+
+  h4{
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    color: $color-small-headers;
+  }
+
+  h5{
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
-h4 {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 2.7px;
-}
 
 //navbar #menu
 nav {
@@ -33,8 +69,6 @@ nav {
   right: 0;
   z-index: 10000;
 
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem;
 
   .logo{
@@ -61,9 +95,21 @@ nav {
 //header #hero
 #hero{
   background: url(./../assets/images/pp-main-background.jpg) no-repeat center;
+  background-size: cover;
   color: #fff;
   text-align: center;
-  padding: 14rem 0 7rem;
+  padding: 15rem 0 10rem;
+
+  .row{
+    margin-right: 0;
+  }
+
+  h1, h4 {
+    color: #fff;
+  }
+  h1{
+    margin: 0 0 24px;
+  }
 
   p{
     border-radius: 3px;
@@ -71,15 +117,75 @@ nav {
     margin: 0 auto;
   }
 
-  button{
+  button.CTA{
     margin: 54px 0;
+  }
+
+  .circle-down{
+    display: block;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 7px 0;
+    margin: 0 auto;
   }
 }
 
+.overlap-boxes {
+
+  position: relative;
+
+  &>div{
+    border-radius: 3px;
+  }
+
+  .first-box{
+    max-width: 610px;
+    padding: 50px 50px 45px;
+  }
+
+  .under-box{
+    max-width: 693px;
+    position: absolute;
+    top: 5.5rem;
+    left: 54rem;
+    z-index: -10;
+  }
+
+  .additional-info-box{
+    max-width: 510px;
+    background: #3ead48;
+    padding: 45px;
+    text-align: center;
+    position: relative;
+    left: 6rem;
+    top: -1rem;
+    z-index: -1;
+
+    h2, h4, h5 {
+      color: #fff;
+    }
+  }
+}
+.white-shadow-box{
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.18);
+}
+
+
+.img-responsive{
+  width: 100%;
+  height:100%
+}
+
 button.CTA{
-  background: #3ead48;
+  background: $color-primary;
   color: #fff;
   font-weight: 700;
+  font-size: 16px;
   line-height: 19px;
   letter-spacing: -0.13px;
   border: none;
@@ -87,3 +193,15 @@ button.CTA{
   width: 320px;
   height: 48px;
 }
+
+.container-limited-width{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+

@@ -6,20 +6,21 @@
     <meta name="description" content="Turniej piłkarzyków"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<nav>
+<nav class="container-limited-width">
     <div class="logo">
         <img src="./assets/images/jb-logo.svg" alt="logo">
     </div>
     <div id="menu">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">O turnieju</a></li>
+            <li><a href="#about">O turnieju</a></li>
             <li><a href="#">Nagrody</a></li>
             <li><a href="#">Jak dołączyć</a></li>
             <li><a href="#">Kontakt</a></li>
@@ -29,18 +30,81 @@
 
 <header>
     <div id="hero" class="container-fluid">
+        <!--todo margin 0 -15px RESPONSYWNOSC-->
         <div class="row">
             <div class="col-sm-12">
                 <h4>Turniej piłkarzyków</h4>
                 <h1>Party Parrot Tournament</h1>
                 <p>Czy masz już dosyć nudnej codzienności, potrzebujesz nowych doznań, lub po prostu chcesz wymiatać w piłkarzykach? W takim wypadku mozesz być pewien, że turniej piłkarzyków Party Parrot jest stworzony dla Ciebie!</p>
                 <button class="CTA">Dołącz do turnieju</button>
+                <button class="circle-down">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
             </div>
         </div>
     </div>
 </header>
 
-<main></main>
+<main>
+    <div id="about" class="container-limited-width">
+        <div class="overlap-boxes">
+            <div class="first-box white-shadow-box">
+                <h4>O turnieju</h4>
+                <h3>Graj z najlepszymi, poczuj ducha rywalizacji i wiatr we włosach</h3>
+                <p>Party Parrot Tournament to turniej piłkarzyków, który oferuje jego uczestnikom niezwykłe doznania, takie jak duże ilości dokuczliwych żartów ze strony drużyny przeciwnej i frustrujące porażki, ale także satysfakcjonujące zwycięstwa oraz możliwość zobaczenia grymasu na twarzy osoby którą właśnie pokonałeś 10 - 0. Brzmi ciekawie?</p>
+                <button class="CTA">Dołącz do turnieju</button>
+            </div>
+
+            <div class="under-box">
+                <img src="./assets/images/pp-foosball-match.jpg" alt="foosball match" class="img-responsive"/>
+            </div>
+
+            <div class="additional-info-box">
+                <h4>Dzienne statystyki</h4>
+                <div class="flex-box">
+                    <div class="col-xm-12 col-lg-4"><h2>9</h2><h5>Rozegranych meczów</h5></div>
+                    <div class="col-xm-12 col-lg-4"><h2>1530</h2> <h5>Strzelonych bramek</h5></div>
+                    <div class="col-xm-12 col-lg-4"><h2>3</h2> <h5>Litry potu</h5></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="reward" class="container-limited-width">
+        <h4>Nagrody</h4>
+        <h3>Dla pięciu najlepszych graczy przygotowano specjalne nagrody</h3>
+        <div class="flex-box">
+            <div>
+                <h2>#1</h2>
+                <img src="./assets/images/pp-reward-1.svg" alt="handshake"/>
+                <p>Uścisk dłoni prezesa</p>
+            </div>
+            <div>
+                <h2>#2</h2>
+                <img src="./assets/images/pp-reward-2.svg" alt="newspaper subscription"/>
+                <p>Roczna prenumerata gazety "Wędkarki Świat"</p>
+            </div>
+            <div>
+                <h2>#3</h2>
+                <img src="./assets/images/pp-reward-3.svg" alt="calendar"/>
+                <p>Trial na stronie do skracania linków ujeb.se</p>
+            </div>
+            <div>
+                <h2>#4</h2>
+                <img src="./assets/images/pp-reward-4.svg" alt="WinRar"/>
+                <p>Licencja programu WinRar</p>
+            </div>
+            <div>
+                <h2>#5</h2>
+                <img src="./assets/images/pp-reward-5.svg" alt="clock"/>
+                <p>Mozliwość pracy po godzinach</p>
+            </div>
+        </div>
+    </div>
+
+</main>
 
 <footer></footer>
 
