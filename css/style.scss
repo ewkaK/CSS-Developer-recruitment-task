@@ -1,6 +1,3 @@
-//todo something wrong with fonts - not work in #join name quote author
-//todo all h4 font-weight: bold
-
 //colors
 $color-body: #f4f4f4;
 $color-default-text: #3c3c3c;
@@ -11,21 +8,13 @@ $color-secondary: #1e3066;
 
 //typography
 @font-face {
-  font-family: "Raleway-Regular";
-  src: url(./../assets/fonts/Raleway/Raleway-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "Raleway-Medium";
-  src: url(./../assets/fonts/Raleway/Raleway-Medium.ttf) format("truetype");
-}
-@font-face {
   font-family: "Millunium";
   src: url(./../assets/fonts/Millunium/Millunium-Bold.ttf) format("truetype");
 }
 
 //typography config + body background-color
 body{
-  font-family: "Raleway-Regular", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   line-height: 24px;
   background: $color-body;
@@ -123,8 +112,8 @@ nav {
   }
 
   p{
-    font-family: Raleway-Medium, sans-serif;
-    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     max-width: 600px;
     margin: 0 auto;
   }
@@ -162,7 +151,8 @@ nav {
       }
 
       h4{
-        font-family: "Raleway-Regular", sans-serif;
+        letter-spacing: -0.27px;
+        text-transform: none;
         margin: 0;
       }
     }
@@ -230,13 +220,10 @@ footer{
     z-index: -10;
 
     &.text-content{
-      font-family: Raleway-Medium, sans-serif;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
       padding: 40px;
       padding-left: 90px;
-
-      p{
-        font-width: 500;
-      }
     }
   }
 
