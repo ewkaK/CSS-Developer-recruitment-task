@@ -1,0 +1,88 @@
+@media (max-width: 1138px) {
+  .overlap-boxes .additional-info-box {
+    top: 47rem;
+  }
+}
+@media (max-width: 1042px) {
+  .overlap-boxes .first-box {
+    padding: 2.9rem 3.8rem 5.5rem;
+  }
+  .overlap-boxes .additional-info-box {
+    top: 33rem;
+    width: 50%;
+    max-width: 600px;
+    left: unset;
+    right: 2rem;
+  }
+
+  #reward {
+    padding-top: 1rem;
+  }
+  #reward > .container-limited-width > .flex-box {
+    padding: 0 9rem;
+  }
+
+  #join {
+    padding-bottom: 11rem;
+  }
+  #join .overlap-boxes .first-box {
+    width: 600px;
+    max-width: 100%;
+  }
+  #join .overlap-boxes .under-box {
+    width: 638px;
+    max-width: 96%;
+    top: 30rem;
+    left: unset;
+    padding: 10rem 3rem 4rem;
+  }
+
+  #contact {
+    padding-top: 12rem;
+  }
+
+  .container-limited-width {
+    padding: 8rem 0 7rem;
+  }
+}
+@media (max-width: 991px) {
+  .contact-info {
+    padding: 5rem 4rem 0 5rem;
+  }
+
+  .section-heading {
+    margin: 0 0 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .overlap-boxes .first-box {
+    max-width: 530px;
+    width: 69%;
+    margin-bottom: 14rem;
+  }
+  .overlap-boxes .additional-info-box {
+    top: 14rem;
+    left: unset;
+    right: 0;
+    max-width: 264px;
+  }
+  .overlap-boxes .under-box {
+    top: 47rem;
+    left: 3rem;
+    width: 70%;
+  }
+
+  #reward {
+    padding-top: 13rem;
+  }
+
+  #join {
+    padding-bottom: 0;
+  }
+
+  #contact {
+    padding-top: 10rem;
+  }
+}
+
+/*# sourceMappingURL=media-queries.css.map */
