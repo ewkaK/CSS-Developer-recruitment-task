@@ -106,6 +106,17 @@
   }
 }
 
+//logo
+@media (max-width: 790px) {
+  nav .logo{
+    .mobile {
+      display: block;
+    }
+    .desktop {
+      display: none;
+    }
+  }
+}
 
 /* Small devices ************************************************************** */
 

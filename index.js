@@ -2,7 +2,7 @@
 /* *** STICKY MENU ****************************** */
 $(function(){
   var nav = $('nav');
-  $(window).scroll(function(event){
+  $(window).scroll(function(){
     if( window.pageYOffset >= nav.height() ) {
       nav.addClass('sticky')
     } else

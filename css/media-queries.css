@@ -84,6 +84,14 @@
     padding-top: 10rem;
   }
 }
+@media (max-width: 790px) {
+  nav .logo .mobile {
+    display: block;
+  }
+  nav .logo .desktop {
+    display: none;
+  }
+}
 /* Small devices ************************************************************** */
 @media (max-width: 500px) {
   body {

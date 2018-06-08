@@ -55,6 +55,9 @@ nav.container-limited-width {
 nav .logo {
   float: left;
 }
+nav .logo .mobile {
+  display: none;
+}
 nav #menu {
   float: right;
   padding: 0.7rem 0;
