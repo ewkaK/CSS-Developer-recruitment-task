@@ -80,6 +80,10 @@ nav {
     float: right;
     padding: 0.7rem 0;
 
+    ul {
+      padding: 0;
+      margin: 0;
+    }
     li{
       display:inline-block;
 
@@ -294,6 +298,25 @@ button.CTA{
   margin: 0 auto;
 }
 
+//sticky menu
+.sticky{
+  position: fixed;
+  background: $color-secondary;
+  padding: 0.5rem 2rem;
+
+  &.container-limited-width{
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  #menu {
+    float: right;
+    padding: 0;
+    padding-top: 1rem;
+    line-height: 1em;
+  }
+}
 
 
 .container-limited-width{

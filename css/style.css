@@ -59,6 +59,10 @@ nav #menu {
   float: right;
   padding: 0.7rem 0;
 }
+nav #menu ul {
+  padding: 0;
+  margin: 0;
+}
 nav #menu li {
   display: inline-block;
 }
@@ -243,6 +247,23 @@ button.CTA {
   text-align: center;
   padding: 7px 0;
   margin: 0 auto;
+}
+
+.sticky {
+  position: fixed;
+  background: #1e3066;
+  padding: 0.5rem 2rem;
+}
+.sticky.container-limited-width {
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 2rem;
+}
+.sticky #menu {
+  float: right;
+  padding: 0;
+  padding-top: 1rem;
+  line-height: 1em;
 }
 
 .container-limited-width {
