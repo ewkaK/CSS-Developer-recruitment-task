@@ -84,5 +84,28 @@
     padding-top: 10rem;
   }
 }
+/* Small devices ************************************************************** */
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body h1 {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  body h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  body h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  body h4 {
+    font-size: 15px;
+    line-height: 16px;
+  }
+}
 
 /*# sourceMappingURL=media-queries.css.map */
