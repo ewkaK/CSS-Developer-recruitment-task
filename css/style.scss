@@ -68,7 +68,7 @@ nav {
   right: 0;
   z-index: 10000;
 
-  &.container-limited-width{
+  .container-limited-width{
     padding: 2rem;
   }
 
@@ -95,7 +95,96 @@ nav {
         color: #fff;
         font-weight: 700;
         text-transform: uppercase;
-        margin-right: 3rem;
+        margin-right: 2rem;
+        padding: 0 0.7rem;
+
+        &.active,
+        &:hover,
+        &:focus {
+          border-bottom: 2px solid $color-primary;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  //sticky menu
+  &.sticky{
+    position: fixed;
+    background: $color-secondary;
+    padding: 1rem 2rem;
+    width: 100vw;
+
+    .container-limited-width{
+      padding: 0 2rem;
+    }
+
+    #menu {
+      padding: 0;
+      padding-top: 1rem;
+      line-height: 1em;
+    }
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .hamburger {
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    float: right;
+    transition: all 0.3s ease-in-out;
+  }
+
+  //mobile menu
+  #menu.mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: $color-secondary;
+    z-index: 9999999;
+    height: 100vh;
+    padding: 2rem 2rem 1rem 5rem;
+    width: 90%;
+
+    ul{
+      display: block;
+
+      li{
+        display: block;
+        margin-bottom: 2.5rem;
+
+        &:first-child{
+          padding: 7rem 0 0;
+        }
+
+        a{
+          text-transform: none;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+
+          &.active,
+          &:hover,
+          &:focus {
+            position: relative;
+            text-decoration: none;
+            border: none;
+
+            &:before{
+              content: "";
+              background: $color-primary;
+              height: 3px;
+              width: 6rem;
+              display: block;
+              position: absolute;
+              top: 1rem;
+              left: -8rem;
+            }
+          }
+        }
       }
     }
   }
@@ -124,10 +213,11 @@ nav {
     font-weight: 500;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 2rem;
   }
 
   button.CTA{
-    margin: 5rem 0;
+    margin: 5rem auto;
   }
 }
 
@@ -172,11 +262,13 @@ nav {
 #contact{
   background: #fff;
 
-  form .flex-box{
-    justify-content: space-between;
+  .section-heading{
+    margin: 0;
   }
+
   input{
-    width: 49%;
+    width: 100%;
+    box-sizing: border-box;
     border: none;
     border-bottom: 1px solid #c4c4c3;
     padding: 7px 0;
@@ -243,11 +335,21 @@ footer{
     width: 44%;
     max-width: 510px;
     padding: 4rem;
+    padding-bottom: 3rem;
     text-align: center;
     position: absolute;
     left: 6rem;
     top: 39rem;
     z-index: -1;
+
+    .flex-box div{
+      max-width: 30%;
+      margin: 1rem;
+
+      h2, h5{
+        margin: 0;
+      }
+    }
   }
 }
 .white-shadow-box{
@@ -258,6 +360,7 @@ footer{
 //used in #reward section
 .icon-box {
   max-width: 187px;
+  font-weight: 700;
 
   .icon {
     height: 100px;
@@ -268,10 +371,6 @@ footer{
       max-width: 100%;
       height: auto;
     }
-  }
-
-  p{
-    font-weight: 700;
   }
 }
 
@@ -287,6 +386,12 @@ button.CTA{
   border-radius: 3px;
   width: 320px;
   height: 48px;
+  max-width: 100%;
+  display: block;
+
+  &:hover{
+  background: darken( $color-primary, 10% )
+  }
 }
 
 //icon to slide down (used in #hero section)
@@ -300,26 +405,6 @@ button.CTA{
   text-align: center;
   padding: 7px 0;
   margin: 0 auto;
-}
-
-//sticky menu
-.sticky{
-  position: fixed;
-  background: $color-secondary;
-  padding: 0.5rem 2rem;
-
-  &.container-limited-width{
-    width: 100%;
-    max-width: 100%;
-    padding: 1rem 2rem;
-  }
-
-  #menu {
-    float: right;
-    padding: 0;
-    padding-top: 1rem;
-    line-height: 1em;
-  }
 }
 
 
@@ -355,5 +440,24 @@ button.CTA{
 
   h2, h4, h5, p, i {
     color: #fff;
+  }
+}
+
+
+#overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 5, 19, 0.8);
+  overflow: hidden;
+  display: none;
+
+  &.show{
+    z-index: 10;
+    display: block;
   }
 }

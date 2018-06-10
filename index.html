@@ -18,23 +18,29 @@
 </head>
 
 <body>
-<nav class="container-limited-width">
+<nav>
+    <div class="container-limited-width">
+        <div class="logo">
+            <img src="./assets/images/jb-logo.svg" alt="logo" class="desktop" />
+            <img src="./assets/images/jb-logo-small.png" alt="logo" class="mobile" />
+        </div>
 
-    <div class="logo">
-        <img src="./assets/images/jb-logo.svg" alt="logo" class="desktop">
-        <img src="./assets/images/jb-logo-small.png" alt="logo" class="mobile">
-    </div>
+        <div id="menu">
+            <i class="fas fa-bars hamburger"></i>
 
-    <div id="menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">O turnieju</a></li>
-            <li><a href="#reward">Nagrody</a></li>
-            <li><a href="#join">Jak dołączyć</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">O turnieju</a></li>
+                <li><a href="#reward">Nagrody</a></li>
+                <li><a href="#join">Jak dołączyć</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+
     </div>
 </nav>
+
+<div id="overlay"></div>
 
 <header>
     <div id="hero" class="container-fluid">
@@ -93,7 +99,8 @@
                     <div class="icon flex-box">
                         <img src="./assets/images/pp-reward-1.svg" alt="handshake"/>
                     </div>
-                    <p>Uścisk dłoni prezesa</p>
+                    Uścisk dłoni <br />
+                    prezesa
                 </div>
 
                 <div class="icon-box">
@@ -101,7 +108,8 @@
                     <div class="icon flex-box">
                         <img src="./assets/images/pp-reward-2.svg" alt="newspaper subscription"/>
                     </div>
-                    <p>Roczna prenumerata gazety "Wędkarki Świat"</p>
+                    Roczna prenumerata gazety "Wędkarki <br />
+                    Świat"
                 </div>
 
                 <div class="icon-box">
@@ -109,7 +117,8 @@
                     <div class="icon flex-box">
                         <img src="./assets/images/pp-reward-3.svg" alt="calendar"/>
                     </div>
-                    <p>Trial na stronie do skracania linków ujeb.se</p>
+                    Trial na stronie do <br />
+                    skracania linków ujeb.se
                 </div>
 
                 <div class="icon-box">
@@ -117,7 +126,7 @@
                     <div class="icon flex-box">
                         <img src="./assets/images/pp-reward-4.svg" alt="WinRar"/>
                     </div>
-                    <p>Licencja programu WinRar</p>
+                    Licencja programu WinRar
                 </div>
 
                 <div class="icon-box">
@@ -125,7 +134,8 @@
                     <div class="icon flex-box">
                         <img src="./assets/images/pp-reward-5.svg" alt="clock"/>
                     </div>
-                    <p>Mozliwość pracy po godzinach</p>
+                    Mozliwość pracy <br />
+                    po godzinach
                 </div>
             </div>
 
@@ -169,24 +179,26 @@
         <div class="container container-limited-width">
             <div class="row">
 
-                <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-md-6 no-padding">
                     <img src="assets/images/pp-office.jpg" class="img-responsive" />
                 </div>
 
-                <div class="col-xs-12 col-md-6 col-lg-6 contact-info">
+                <div class="col-xs-12 col-md-6 contact-info">
                     <div class="section-heading">
                         <h4>Kontakt</h4>
                         <h3>Napisz do nas!</h3>
                     </div>
 
                     <form>
-                        <div class="flex-box">
-                            <input type="text" name="name" aria-label="Imię i nazwisko" placeholder="Imię i nazwisko" />
-                            <input type="email" name="email" aria-label="Adres e-mail" placeholder="Adres e-mail" />
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 no-padding">
+                                <input type="text" name="name" aria-label="Imię i nazwisko" placeholder="Imię i nazwisko" />
+                            </div>
+                            <div class="col-xs-12 col-sm-6 no-padding">
+                                <input type="email" name="email" aria-label="Adres e-mail" placeholder="Adres e-mail" />
+                            </div>
                         </div>
-
                         <textarea name="message" aria-label="Treść wiadomości" placeholder="Treść wiadomości"></textarea>
-
                         <button type="submit" class="CTA">Wyślij wiadomość</button>
                     </form>
                 </div>

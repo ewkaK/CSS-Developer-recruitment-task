@@ -1,14 +1,14 @@
 //height correction for .additional-info-box
-@media(max-width: 1138px){
+@media(max-width: 1164px){
   .overlap-boxes {
     .additional-info-box{
-      top: 47rem;
+      top: 44rem;
     }
   }
 }
 
 //move to right .additional-info-box
-@media(max-width: 1042px){
+@media(max-width: 1047px){
   .overlap-boxes{
 
     .first-box{
@@ -26,10 +26,6 @@
 
   #reward {
     padding-top: 1rem;
-
-    & > .container-limited-width > .flex-box {
-      padding: 0 9rem;
-    }
   }
 
   #join {
@@ -60,13 +56,13 @@
 }
 
 // #contact for medium devices
-@media(max-width: 991px){
+@media (max-width: 991px){
   .contact-info {
     padding: 5rem 4rem 0 5rem;
-  }
 
-  .section-heading {
-    margin: 0 0 3rem;
+    .section-heading {
+      margin: 0 0 3rem;
+    }
   }
 }
 
@@ -81,10 +77,21 @@
     }
 
     .additional-info-box{
-      top: 14rem;
+      top: 13rem;
       left: unset;
       right: 0;
       max-width: 264px;
+      width: 35%;
+      padding-right: 3rem;
+
+      .flex-box {
+        flex-direction: column;
+        align-items: center;
+
+        div{
+          max-width: 65%;
+        }
+      }
     }
     .under-box {
       top: 47rem;
@@ -95,6 +102,10 @@
 
   #reward{
     padding-top: 13rem;
+
+    & > .container-limited-width > .flex-box {
+      padding: 0 5rem;
+    }
   }
 
   #join {
@@ -106,19 +117,156 @@
   }
 }
 
-//logo
-@media (max-width: 790px) {
-  nav .logo{
-    .mobile {
-      display: block;
+//change logo for smaller devices, and hover ul
+@media (max-width: 900px) {
+  nav {
+    .logo {
+      .mobile {
+        display: block;
+      }
+      .desktop {
+        display: none;
+      }
     }
-    .desktop {
+
+    ul {
       display: none;
+    }
+    .hamburger{
+      display: block;
     }
   }
 }
 
-/* Small devices ************************************************************** */
+//padding correction for #reward
+@media (max-width: 730px) {
+  #reward {
+    padding-top: 6rem;
+  }
+}
+
+//hight correction #about .under-box
+@media (max-width: 646px) {
+  #about .under-box{
+    top: 55rem;
+  }
+}
+
+@media (max-width: 610px) {
+
+  #hero {
+    padding: 10rem 0 4rem;
+
+    button.CTA{
+      margin: 3rem auto;
+      max-width: 75vw;
+    }
+  }
+
+  #about.container-limited-width,
+  #join .container-limited-width {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .overlap-boxes {
+    .first-box {
+      width: 96vw;
+      max-width: 96vw;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      position: relative;
+      top: 4rem;
+
+      .CTA{
+        margin: 0 auto;
+      }
+    }
+
+    .under-box,
+    .additional-info-box {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      border-radius: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .additional-info-box{
+      padding: 3rem 2rem;
+    }
+  }
+  #about.container-limited-width {
+    .under-box{
+      top: 0;
+    }
+  }
+
+  #join .overlap-boxes {
+    .first-box{
+      width: 96vw;
+      max-width: 96vw;
+    }
+    .under-box{
+      top: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 8rem 2rem 2rem;
+    }
+    .quote {
+      i{
+        position: absolute;
+        font-size: 8em;
+        color: rgba(255, 255, 255, 0.25);
+        top: 5rem;
+        right: -2rem;
+      }
+      img{
+        max-width: 48px;
+        height: auto;
+      }
+
+      .quote-author{
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  #reward{
+    padding: 0;
+  }
+
+  #contact{
+
+    .row{
+      margin: 0;
+
+      .no-padding{
+        padding: 0;
+      }
+    }
+
+    padding-top: 0;
+
+    .container-limited-width{
+      padding-top: 0;
+      width: 100vw;
+    }
+
+    .contact-info {
+      padding: 4rem 2rem 0;
+    }
+  }
+  .container-limited-width {
+    padding: 4rem 0;
+  }
+}
 
 @media (max-width: 500px) {
 
